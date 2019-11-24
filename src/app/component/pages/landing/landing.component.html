@@ -1,5 +1,46 @@
-<mat-toolbar class="blue-theme" color="primary">
+<mat-toolbar class="bluegrey-theme mat-elevation-z5" color="primary">
   <mat-toolbar-row>
-    <span>First Row</span>
+    <span>Product</span>
+    <button
+      mat-icon-button
+      class="menu-btn"
+      (mouseover)="hoverMenuBtn()"
+      (mouseout)="stopHoverMenuBtn()"
+    >
+      <i class="material-icons" [ngClass]="{ disable: isMenuBtnHovering }"
+        >menu</i
+      >
+      <i class="material-icons" [ngClass]="{ disable: !isMenuBtnHovering }"
+        >menu_open</i
+      >
+    </button>
   </mat-toolbar-row>
 </mat-toolbar>
+
+<div class="container">
+  <div class="row">
+    <div class="introduction-container col-sm-12">
+      <span class="highlight">Technology Solution</span>
+      <span class="non-highlight">For your product</span>
+    </div>
+  </div>
+</div>
+
+<div class="cards-container">
+  <mat-card class="introduction-card">
+    <img mat-card-image src="https://dummyimage.com/300.png/09f/fff" />
+    <mat-card-footer class="mat-elevation-z4">Some text!</mat-card-footer>
+  </mat-card>
+  <mat-card class="introduction-card">
+    <img mat-card-image src="https://dummyimage.com/300.png/09f/fff" />
+    <mat-card-footer class="mat-elevation-z4">Some text!</mat-card-footer>
+  </mat-card>
+  <mat-card class="introduction-card">
+    <img mat-card-image src="https://dummyimage.com/300.png/09f/fff" />
+    <mat-card-footer class="mat-elevation-z4">Some text!</mat-card-footer>
+  </mat-card>
+  <mat-card class="introduction-card">
+    <img mat-card-image src="https://dummyimage.com/300.png/09f/fff" />
+    <mat-card-footer class="mat-elevation-z4">Some text!</mat-card-footer>
+  </mat-card>
+</div>

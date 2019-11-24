@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LandingComponent implements OnInit {
 
+isMenuBtnHovering = false;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  hoverMenuBtn() {
+    this.isMenuBtnHovering = true;
+  }
+  stopHoverMenuBtn() {
+    this.isMenuBtnHovering = false;
+  }
 }

@@ -1,41 +1,42 @@
-$md-blue: (
-    50 : #e8eaf6,
-    100 : #c5cbe9,
-    200 : #9fa8da,
-    300 : #7985cb,
-    400 : #5c6bc0,
-    500 : #3f51b5,
-    600 : #394aae,
-    700 : #3140a5,
-    800 : #29379d,
-    900 : #1b278d,
-    A100 : #c6cbff,
-    A200 : #939dff,
-    A400 : #606eff,
-    A700 : #4757ff,
+$md-bluegrey: (
+    50 : #fdfdfd,
+    100 : #f9fafb,
+    200 : #f6f7f8,
+    300 : #f2f4f5,
+    400 : #eff1f3,
+    500 : #eceff1,
+    600 : #eaedef,
+    700 : #e7ebed,
+    800 : #e4e8eb,
+    900 : #dfe4e7,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
     contrast: (
         50 : #000000,
         100 : #000000,
         200 : #000000,
         300 : #000000,
-        400 : #ffffff,
-        500 : #ffffff,
-        600 : #ffffff,
-        700 : #ffffff,
-        800 : #ffffff,
-        900 : #ffffff,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
         A100 : #000000,
         A200 : #000000,
-        A400 : #ffffff,
-        A700 : #ffffff,
+        A400 : #000000,
+        A700 : #000000,
     )
 );
-
-$blue-theme-primary: mat-palette($md-blue);
-$blue-theme-accent: mat-palette($md-blue, 300);
-$blue-theme-warn: mat-palette($md-blue, 500);
-$blue-theme: mat-light-theme(
-  $blue-theme-primary,
-  $blue-theme-accent,
-  $blue-theme-warn
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+$bluegrey-theme-primary: mat-palette($md-bluegrey,500,100,700);
+$bluegrey-theme-accent: mat-palette($md-bluegrey, A200);
+$bluegrey-theme-warn: mat-palette($md-bluegrey, 00);
+$bluegrey-theme: mat-light-theme(
+  $bluegrey-theme-primary,
+  $bluegrey-theme-accent,
+  $bluegrey-theme-warn
 );
+

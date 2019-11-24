@@ -1,1 +1,67 @@
-@import '../../../../styles.scss';
+@import "../../../../styles.scss";
+
+.menu-btn {
+  margin-left: auto;
+
+  &:hover {
+    background: #b1c0b1;
+  }
+}
+
+.disable {
+  display: none;
+}
+
+.introduction-container {
+  margin-top: 6%;
+  text-align: center;
+  font-family: "Muli";
+  text-rendering: auto;
+  font-weight: 800;
+  letter-spacing: -1px;
+  line-height: 1.5;
+  font-size: 48px;
+  color: #444;
+  box-sizing: border-box;
+  transform: scaleX(1);
+}
+
+.highlight {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+
+  &:after {
+    background-color: #ffc050;
+    position: absolute;
+    top: 55%;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 35%;
+    z-index: -1;
+    width: 100%;
+  }
+}
+
+.non-highlight {
+  display: block;
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2%;
+
+  & .introduction-card {
+    min-width: 230px;
+    min-height: 260px;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
